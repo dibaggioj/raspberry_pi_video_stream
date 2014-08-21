@@ -8,6 +8,18 @@ var	BigBangClient = require("./BigBangClient.js"),
 	PewRuntime = require("./BigBangClient.js"),
 	bbNode = require("./NodeBigBangClient.js");
 
+var ffmpeg = require('fluent-ffmpeg');
+var express = require('express');
+
+//var ffmpeg-node = require('./node_modules/ffmpeg-node/ffmpeg-node.js');
+
+// ffmpeg-node.mp4(
+//    './test.3gp',
+//    function (err, out, code) {
+//       console.log(err, out, code);
+//    }
+// );
+
 var client = new bbNode.NodeBigBangClient();
 var myChannel;
 
